@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lubay Jaya Teknik – Bengkel Las, Teralis & Konstruksi Besi</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6f9;--surf:#fff;--ink:#101c2e;--mut:#55627a;--navy:#0f1b2d;--or:#f58a07;--or2:#e07600;--line:#dde3ec;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1220;--surf:#131f33;--ink:#eef2f8;--mut:#9fb0c8;--line:#24344d}}
+:root[data-theme="dark"]{--bg:#0a1220;--surf:#131f33;--ink:#eef2f8;--mut:#9fb0c8;--line:#24344d}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Barlow,system-ui,sans-serif}
+h1,h2,h3{font-family:'Barlow Condensed',Impact,sans-serif;line-height:1.05;letter-spacing:.2px}
+a{color:inherit;text-decoration:none}.w{max-width:1100px;margin:auto;padding:0 18px}
+.btn{display:inline-flex;gap:8px;align-items:center;background:var(--or);color:#1a1000;font-weight:600;padding:12px 22px;border:0;border-radius:8px;cursor:pointer;font:600 16px Barlow,sans-serif}
+.btn:hover{background:var(--or2)}.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--or);outline-offset:2px}
+.top{background:var(--navy);color:#cfd8e6;font-size:13px;padding:6px 0}.top .w{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
+header{position:sticky;top:0;z-index:9;background:#0b0f17;border-bottom:3px solid var(--or)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px}.logo b{font:700 24px 'Barlow Condensed';color:#fff}.logo b i{color:var(--or);font-style:normal}
+nav{display:flex;gap:20px;font-weight:500;color:#fff}nav a:hover{color:var(--or)}
+@media(max-width:820px){nav{display:none}.top .w span:last-child{display:none}}
+.hero{background:#0b0f17;color:#fff;overflow:hidden}
+.hero .w{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;align-items:center;padding-top:44px;padding-bottom:44px}
+.hero h1{font-size:clamp(42px,7vw,72px)}.hero h1 span{color:var(--or)}
+.hero p{margin:16px 0 14px;color:#fff;max-width:44ch;font-size:22px;font-weight:600}.ck{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:8px;color:#e6ecf5}.ck li:before{content:"✓";background:var(--or);color:#1a1000;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-right:10px}.dk{background:#0b0f17;color:#fff}.dk .sub{color:#b9c6da}.dk .tm div{background:#16202e;border-color:#26354a}.dk h3{color:var(--or)}.cta{background:#0b0f17;color:#fff;padding:26px 0}.cta .w{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}.cta h3{font-size:28px}.cta .g{background:#25d366;color:#04210f}.cta small{color:#b9c6da;max-width:34ch}
+.hero svg{width:100%;height:auto;max-height:340px}
+@media(max-width:820px){.hero .w{grid-template-columns:1fr}}
+.usp{background:#0b0f17;color:#fff;border-top:1px solid #26354a}.usp .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;padding-top:16px;padding-bottom:16px}
+.usp div{font-weight:600;padding:6px 10px;border-left:3px solid var(--or)}.usp small{display:block;font-weight:400;color:#aab6c8}
+section{padding:48px 0}h2{font-size:38px;margin-bottom:6px}.sub{color:var(--mut);margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.card svg{width:100%;height:150px;background:#1b2a42;display:block}
+.card .b{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}.card h3{font-size:25px}
+.card p{color:var(--mut);font-size:15px;flex:1}.price{font-weight:600;color:var(--or2)}
+.card .btn{padding:9px 14px;font-size:15px;justify-content:center}
+.est{background:var(--navy);color:#fff}.est .sub{color:#b9c6da}
+.est .box{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}@media(max-width:820px){.est .box{grid-template-columns:1fr}}
+label{display:block;font-size:14px;margin:12px 0 4px}
+input,select,textarea{width:100%;padding:11px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surf);color:var(--ink);font:16px Barlow,sans-serif}
+.res{background:#16263f;border-radius:12px;padding:22px}.res .n{font:700 44px 'Barlow Condensed';color:var(--or)}.res small{color:#b9c6da}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;counter-reset:s}
+.steps div{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:16px;counter-increment:s}
+.steps div:before{content:counter(s);font:700 30px 'Barlow Condensed';color:var(--or);display:block}
+.steps b{display:block}.steps span{color:var(--mut);font-size:15px}
+.tm{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.tm div{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:18px}.tm b{display:block;margin-top:8px}.st{color:var(--or)}
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:24px}@media(max-width:820px){.loc{grid-template-columns:1fr}}
+.loc>div{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:22px}
+footer{background:var(--navy);color:#b9c6da;padding:26px 0;font-size:14px;text-align:center}
+.gl{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}.gl figure{position:relative;border-radius:10px;overflow:hidden;background:var(--surf);border:1px solid var(--line)}.gl img{width:100%;height:170px;object-fit:cover;display:block}.gl figcaption{padding:8px 10px;font-size:14px}.gl .x,.ol .x{background:#b3261e;color:#fff;border:0;border-radius:6px;padding:4px 10px;cursor:pointer;font:14px Barlow,sans-serif}.gl .x{position:absolute;top:8px;right:8px}.fm{display:grid;grid-template-columns:1fr 1fr;gap:24px}@media(max-width:820px){.fm{grid-template-columns:1fr}}.ol>div{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;font-size:14px}.ol img{width:56px;height:56px;object-fit:cover;border-radius:6px;margin:6px 6px 0 0}.tbs{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px;margin-bottom:10px}.tb{flex:none;border:1px solid var(--line);background:var(--surf);color:var(--ink);padding:9px 16px;border-radius:99px;cursor:pointer;font:600 15px Barlow,sans-serif}.tb.on{background:var(--or);color:#1a1000;border-color:var(--or)}.gl svg{width:100%;height:170px;background:#1b2a42;display:block}.pm{padding:6px 12px;font-size:14px;margin-top:6px}.ab{background:var(--or);color:#1a1000;padding:8px 0;font-weight:600}.ab a{text-decoration:underline;margin-left:14px}.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#04210f;font-weight:600;padding:12px 18px;border-radius:99px;box-shadow:0 4px 14px #0004;z-index:10}
+</style>
+</head>
+<body>
+<div class="ab" id="admbar" hidden><div class="w">Mode admin aktif<a href="#edit">Edit website</a><a href="#admin">Unggah foto & pesanan</a><a href="#galeri">Lihat galeri</a></div></div>
+<div class="top"><div class="w"><span id="tAd">Talang Lubai, BD 6, Batang Hari Ogan, Tegineneng, Pesawaran, Lampung</span><span id="tJam">Senin – Sabtu: 08.00 – 17.00 · WA 0813-6992-0633</span></div></div>
+<header><div class="w">
+<a class="logo" href="#top"><svg width="38" height="34" viewBox="0 0 38 34"><path d="M2 17 19 3l17 14" fill="none" stroke="#f58a07" stroke-width="4"/><path d="M8 17v15h22V17" fill="none" stroke="#fff" stroke-width="3"/><path d="M14 32V20m5 12V20m5 12V20" stroke="#f58a07" stroke-width="2.5"/></svg><b>LUBAY JAYA <i>TEKNIK</i></b></a>
+<nav><a href="#produk">Produk</a><a href="#estimasi">Estimasi Harga</a><a href="#proyek">Proyek</a><a href="#galeri">Galeri</a><a href="#pesan">Pesan Custom</a><a href="#alur">Cara Pesan</a><a href="#testimoni">Testimoni</a><a href="#lokasi">Kontak</a></nav>
+<a class="btn" target="_blank" rel="noopener" href="https://wa.me/6281369920633">Chat WhatsApp</a></div></header>
+
+<div class="hero" id="top"><div class="w"><div>
+<h1 id="hh">Solusi Kebutuhan Teralis dan Konstruksi Besi <span>Custom</span></h1>
+<p id="ht">Kuat, Rapi, dan Terpercaya</p><ul class="ck"><li>Bisa custom sesuai ukuran</li><li>Pilihan model modern</li><li>Pengerjaan profesional</li><li>Harga transparan</li></ul>
+<a class="btn" href="https://wa.me/6281369920633?text=Halo%20Lubay%20Jaya%20Teknik%2C%20saya%20ingin%20konsultasi." target="_blank" rel="noopener">Konsultasi Sekarang</a></div>
+<svg viewBox="0 0 400 300" role="img" aria-label="Ilustrasi pagar besi">
+<rect width="400" height="300" fill="#16263f" rx="12"/><rect x="0" y="250" width="400" height="50" fill="#0b1524"/>
+<rect x="20" y="70" width="18" height="190" fill="#e9edf3"/><rect x="362" y="70" width="18" height="190" fill="#e9edf3"/>
+<rect x="38" y="90" width="324" height="8" fill="#0a111d"/><rect x="38" y="240" width="324" height="8" fill="#0a111d"/>
+<g fill="#0a111d"><script></script></g>
+<g stroke="#0a111d" stroke-width="7"><path d="M52 98v142M72 98v142M92 98v142M112 98v142M132 98v142M152 98v142M172 98v142M192 98v142"/></g>
+<g stroke="#f58a07" stroke-width="2.5" fill="none"><path d="M215 98v142M345 98v142"/><path d="M280 104 330 169 280 234 230 169z"/><path d="M280 124 312 169 280 214 248 169z"/><circle cx="280" cy="169" r="12"/></g>
+<text x="200" y="40" text-anchor="middle" fill="#f58a07" font-family="Barlow Condensed" font-size="26" font-weight="700">PAGAR CUSTOM · LASER CUT</text></svg>
+</div></div>
+
+<div class="usp"><div class="w"><div>Kualitas Terbaik<small>Besi pilihan, finishing rapi</small></div><div>Tim Profesional<small>Berpengalaman di bidangnya</small></div><div>Harga Transparan<small>Estimasi sebelum deal</small></div><div>Pengiriman Tepat Waktu<small>Sesuai jangkauan layanan</small></div></div></div>
+
+<section id="produk"><div class="w"><h2>Produk Unggulan</h2><p class="sub">Semua produk bisa disesuaikan ukuran dan desain. Harga akhir mengikuti ukuran, bahan, dan biaya pemasangan.</p>
+<div class="grid" id="cat"></div></div></section>
+
+<section id="model" style="padding-top:0"><div class="w"><h2>Pilih Model Favorit Anda</h2><p class="sub">Pilih kategori, lihat banyak model, lalu tekan Pilih untuk langsung memesan. Foto asli hasil pengerjaan kami tampil paling depan, sisanya ilustrasi model sebagai inspirasi.</p><div class="tbs" id="tabs"></div><div class="gl" id="mod"></div></div></section>
+
+<section id="galeri"><div class="w"><h2>Galeri Hasil Pengerjaan</h2><p class="sub">Contoh teralis, pagar, kanopi, dan railing yang sudah kami kerjakan.</p><div class="gl" id="gal"></div><p id="gadm" hidden style="margin-top:16px"><a class="btn" href="#admin">Unggah foto galeri (admin)</a></p></div></section>
+
+<section id="pesan" style="padding-top:0"><div class="w"><h2>Pesan Custom dengan Contoh Gambar</h2><p class="sub">Punya model yang diinginkan? Unggah foto contohnya, isi ukuran, lalu kirim. Kami balas dengan penawaran lewat WhatsApp.</p>
+<div class="fm"><div><label for="o_nm">Nama lengkap</label><input id="o_nm"><label for="o_wa">Nomor WhatsApp</label><input id="o_wa" inputmode="tel" placeholder="08xx-xxxx-xxxx"><label for="o_pr">Jenis produk</label><select id="o_pr"></select></div><div><label for="o_uk">Ukuran (lebar x tinggi)</label><input id="o_uk" placeholder="Contoh: 2 m x 1,2 m"><label for="o_ct">Detail kebutuhan</label><textarea id="o_ct" rows="3" placeholder="Warna, model, lokasi pemasangan"></textarea><label for="o_f">Foto contoh (maksimal 3)</label><input id="o_f" type="file" accept="image/*" multiple></div></div>
+<p style="margin-top:16px"><button class="btn" id="o_btn" type="button">Kirim Pesanan</button></p><p id="o_st" class="sub" style="margin-top:10px" role="status"></p></div></section>
+
+<section id="edit" hidden style="padding-top:0"><div class="w"><h2>Edit Website</h2><p class="sub">Ubah teks, kontak, dan tarif langsung di sini. Perubahan tampil ke semua pengunjung setelah disimpan.</p>
+<div class="fm"><div><label for="e_h1">Judul utama</label><input id="e_h1"><label for="e_h2">Kata oranye di judul</label><input id="e_h2"><label for="e_tag">Slogan</label><input id="e_tag"><label for="e_tel">Nomor WhatsApp</label><input id="e_tel" inputmode="tel"><label for="e_jam">Jam buka</label><input id="e_jam"><label for="e_ad">Alamat</label><textarea id="e_ad" rows="3"></textarea></div>
+<div><h3>Tarif mulai per m² (Rp)</h3><label for="e_r0">Teralis Jendela</label><input id="e_r0" type="number" min="0" step="1000"><label for="e_r1">Pagar Besi</label><input id="e_r1" type="number" min="0" step="1000"><label for="e_r2">Kanopi</label><input id="e_r2" type="number" min="0" step="1000"><label for="e_r3">Railing</label><input id="e_r3" type="number" min="0" step="1000"><label for="e_r4">Pintu Besi</label><input id="e_r4" type="number" min="0" step="1000"><label for="e_r5">Jasa Las & Custom</label><input id="e_r5" type="number" min="0" step="1000"></div></div>
+<p style="margin-top:16px"><button class="btn" id="e_btn" type="button">Simpan Perubahan</button></p><p id="e_st" class="sub" role="status"></p></div></section>
+
+<section id="admin" hidden style="padding-top:0"><div class="w"><h2>Panel Admin</h2><p class="sub">Hanya terlihat oleh pemilik dan editor. Unggah foto ke galeri dan lihat pesanan masuk.</p>
+<div class="fm"><div><label for="a_t">Judul foto</label><input id="a_t" placeholder="Contoh: Teralis minimalis Tegineneng"><label for="a_c">Kategori</label><select id="a_c"><option value="0">Teralis Jendela</option><option value="1">Pagar Besi</option><option value="2">Kanopi</option><option value="3">Railing</option><option value="4">Pintu Besi</option><option value="5">Jasa Las & Custom</option></select><label for="a_f">Pilih foto (bisa banyak)</label><input id="a_f" type="file" accept="image/*" multiple><p style="margin-top:14px"><button class="btn" id="a_btn" type="button">Unggah ke Galeri</button></p><p id="a_st" class="sub"></p></div><div><h3>Pesanan masuk</h3><div id="ordl" class="ol"><p class="sub">Belum ada pesanan.</p></div></div></div></div></section>
+
+<section class="est" id="estimasi"><div class="w"><h2>Hitung Estimasi Harga</h2><p class="sub">Isi ukuran, lihat perkiraan biaya, lalu kirim permintaan penawaran ke WhatsApp kami.</p>
+<div class="box"><div>
+<label for="p">Jenis produk</label><select id="p"></select>
+<label for="l">Lebar (meter)</label><input id="l" type="number" min="0.1" step="0.1" value="2">
+<label for="t">Tinggi (meter)</label><input id="t" type="number" min="0.1" step="0.1" value="1.2">
+<label for="m">Model desain</label><select id="m"><option value="1">Minimalis</option><option value="1.15">Klasik / ornamen</option><option value="1.3">Custom (laser cut)</option></select>
+<label for="pa"><input id="pa" type="checkbox" style="width:auto;margin-right:8px;display:inline">Dengan pemasangan</label>
+<label for="nm">Nama</label><input id="nm" placeholder="Nama Anda">
+<label for="al">Alamat / wilayah pemasangan</label><input id="al" placeholder="Contoh: Tegineneng, Pesawaran">
+</div><div class="res"><small>Perkiraan harga mulai</small><div class="n" id="out">–</div><small id="det"></small>
+<p style="margin:14px 0;font-size:14px;color:#b9c6da">Ini estimasi awal. Harga final ditentukan setelah pengukuran dan konfirmasi desain. Tarif per m² di bawah adalah contoh dan bisa diubah pemilik toko di bagian data.</p>
+<button class="btn" id="wa" type="button">Kirim Permintaan Penawaran</button></div></div></div></section>
+
+<section id="standar" class="dk"><div class="w"><h2>Mengapa Memilih Lubay Jaya Teknik?</h2><p class="sub">Tiga hal yang kami jaga di setiap pekerjaan.</p>
+<div class="tm"><div><h3>Kuat konstruksinya</h3><p>Bahan besi dipilih sesuai fungsi, dan sambungan las dikerjakan teliti agar tahan lama.</p></div><div><h3>Rapi hasilnya</h3><p>Pengelasan, pengamplasan, dan pengecatan dikerjakan bersih supaya hasil akhirnya enak dilihat.</p></div><div><h3>Terpercaya pelayanannya</h3><p>Harga dijelaskan di awal, jadwal disepakati, dan Anda mudah menghubungi kami selama pengerjaan.</p></div></div></div></section>
+
+<section id="proyek"><div class="w"><h2>Layanan Proyek & Kontraktor</h2><p class="sub">Selain pesanan rumahan, kami melayani kebutuhan konstruksi besi untuk ruko, toko bangunan, kontraktor, dan proyek.</p>
+<div class="tm"><div><h3>Pekerjaan proyek</h3><p>Pagar, kanopi, railing, rolling door, dan rangka besi dalam jumlah banyak dengan jadwal kerja yang disepakati.</p></div><div><h3>Mitra kontraktor & toko bangunan</h3><p>Pesanan rutin dengan penawaran harga khusus. Hubungi kami untuk berdiskusi.</p></div><div><h3>Pelanggan tetap & referensi</h3><p>Pelanggan lama dan pelanggan yang merekomendasikan kami mendapat prioritas penawaran.</p></div></div>
+<p style="margin-top:18px"><a class="btn" target="_blank" rel="noopener" href="https://wa.me/6281369920633?text=Halo%20Lubay%20Jaya%20Teknik%2C%20saya%20ingin%20minta%20penawaran%20proyek.">Minta Penawaran Proyek</a></p></div></section>
+
+<section id="alur"><div class="w"><h2>Cara Pemesanan</h2><p class="sub">Alur jelas dari konsultasi sampai terpasang.</p>
+<div class="steps"><div><b>Pilih produk atau kirim referensi</b><span>Lihat katalog atau kirim foto contoh.</span></div><div><b>Konsultasi ukuran dan kebutuhan</b><span>Via WhatsApp atau survei lokasi.</span></div><div><b>Terima penawaran harga</b><span>Desain dan rincian biaya jelas.</span></div><div><b>Lakukan pembayaran DP</b><span>Pengerjaan dimulai setelah DP.</span></div><div><b>Produksi, pengiriman dan pemasangan</b><span>Pelunasan setelah terpasang.</span></div></div></div></section>
+
+<section id="testimoni" style="padding-top:0"><div class="w"><h2>Testimoni Pelanggan</h2><p class="sub">Contoh tampilan. Ganti dengan testimoni asli pelanggan Anda.</p>
+<div class="tm"><div><span class="st">★★★★★</span><p>Pengerjaannya rapi, hasilnya sangat memuaskan. Pelayanan juga ramah dan profesional.</p><b>Ahmad Fauzi</b></div><div><span class="st">★★★★★</span><p>Harga bersaing, desainnya modern. Sangat rekomendasi untuk kebutuhan teralis dan pagar.</p><b>Siti Nurhaliza</b></div></div></div></section>
+
+<section id="lokasi" style="padding-top:0"><div class="w loc">
+<div><h2>Lokasi Kami</h2><p id="lAd">Talang Lubai, BD 6, RT 11/RW 04, Batang Hari Ogan, Kecamatan Tegineneng, Kabupaten Pesawaran, Lampung 35363.</p><p id="lJam" style="color:var(--mut);margin:8px 0 16px">Senin – Sabtu, 08.00 – 17.00</p>
+<a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Talang+Lubai+BD+6+Batang+Hari+Ogan+Tegineneng+Pesawaran+Lampung+35363">Lihat di Google Maps</a></div>
+<div><h2>Hubungi Kami</h2><p id="lTel" style="font:700 34px 'Barlow Condensed';color:var(--or2)">0813-6992-0633</p><p style="color:var(--mut);margin:8px 0 16px">Kami siap membantu konsultasi dan pemesanan.</p>
+<a class="btn" target="_blank" rel="noopener" href="https://wa.me/6281369920633">Chat WhatsApp</a></div></div></section>
+
+<div class="cta"><div class="w"><h3>Siap mewujudkan proyek besi Anda?<br>Hubungi kami sekarang juga!</h3><a class="btn g" target="_blank" rel="noopener" href="https://wa.me/6281369920633">Chat via WhatsApp</a><small>Talang Lubai, BD 6, Batang Hari Ogan, Tegineneng, Pesawaran, Lampung</small></div></div>
+<footer><div class="w">Lubay Jaya Teknik · Bengkel Las, Teralis & Konstruksi Besi<br>Kuat Konstruksinya, Rapi Hasilnya, Terpercaya Pelayanannya.<br>© 2026 Lubay Jaya Teknik</div></footer>
+<a class="fab" target="_blank" rel="noopener" href="https://wa.me/6281369920633">WhatsApp</a>
+
+<script>
+var WA="6281369920633";
+// Data produk: ubah nama, deskripsi, tarif (Rp per m²) sesuai harga toko
+var P=[
+{n:"Teralis Jendela",d:"Model minimalis, klasik, dan custom.",r:350000,s:'<path d="M30 20h140v110H30z" fill="none" stroke="#e9edf3" stroke-width="6"/><path d="M60 20v110M100 20v110M140 20v110M30 75h140" stroke="#f58a07" stroke-width="4"/>'},
+{n:"Pagar Besi",d:"Pagar rumah dan gerbang.",r:550000,s:'<path d="M15 40h170M15 120h170" stroke="#e9edf3" stroke-width="6"/><path d="M30 40v80M50 40v80M70 40v80M90 40v80M110 40v80M130 40v80M150 40v80M170 40v80" stroke="#f58a07" stroke-width="4"/>'},
+{n:"Kanopi",d:"Kanopi rumah dan tempat usaha.",r:450000,s:'<path d="M15 50h170l-15 18H30z" fill="#f58a07"/><path d="M35 68v62M165 68v62" stroke="#e9edf3" stroke-width="6"/><path d="M15 130h170" stroke="#4a5b78" stroke-width="4"/>'},
+{n:"Railing",d:"Railing tangga dan balkon.",r:400000,s:'<path d="M20 120 180 50" stroke="#e9edf3" stroke-width="6"/><path d="M45 109v28M75 96v40M105 82v54M135 68v68M165 57v79" stroke="#f58a07" stroke-width="4"/>'},
+{n:"Pintu Besi",d:"Pintu keamanan dan pintu custom.",r:650000,s:'<path d="M50 15h100v120H50z" fill="none" stroke="#e9edf3" stroke-width="6"/><path d="M100 15v120M65 35h25v35H65zM110 35h25v35h-25z" stroke="#f58a07" stroke-width="4" fill="none"/>'},
+{n:"Jasa Las & Custom",d:"Pengerjaan sesuai ukuran dan desain.",r:500000,s:'<path d="M100 25l15 30 33 5-24 23 6 33-30-16-30 16 6-33-24-23 33-5z" fill="none" stroke="#f58a07" stroke-width="5"/>'}
+];
+var fmt=function(x){return "Rp"+Math.round(x).toLocaleString("id-ID")};
+var cat=document.getElementById("cat"),ps=document.getElementById("p");
+P.forEach(function(x,i){
+cat.insertAdjacentHTML("beforeend",'<div class="card"><svg viewBox="0 0 200 150" aria-hidden="true">'+x.s+'</svg><div class="b"><h3>'+x.n+'</h3><p>'+x.d+'</p><span class="price" data-p="'+i+'">Harga mulai '+fmt(x.r)+' / m²</span><a class="btn" href="#estimasi" data-i="'+i+'">Hitung estimasi</a></div></div>');
+ps.insertAdjacentHTML("beforeend",'<option value="'+i+'">'+x.n+'</option>')});
+cat.addEventListener("click",function(e){var a=e.target.closest("a[data-i]");if(a){ps.value=a.dataset.i;calc()}});
+function calc(){
+var x=P[+ps.value],l=+document.getElementById("l").value||0,t=+document.getElementById("t").value||0,m=+document.getElementById("m").value;
+var area=l*t,mat=area*x.r*m,pas=document.getElementById("pa").checked?area*75000:0,tot=mat+pas;
+document.getElementById("out").textContent=area>0?fmt(tot):"–";
+document.getElementById("det").textContent=area>0?area.toFixed(2)+" m² · bahan & pengerjaan "+fmt(mat)+(pas?" + pemasangan "+fmt(pas):""):"";
+return {x:x,l:l,t:t,tot:tot}}
+["p","l","t","m","pa"].forEach(function(id){document.getElementById(id).addEventListener("input",calc)});
+document.getElementById("wa").onclick=function(){
+var c=calc(),nm=document.getElementById("nm").value,al=document.getElementById("al").value;
+var msg="Halo Lubay Jaya Teknik, saya "+(nm||"calon pelanggan")+" ingin minta penawaran:\n- Produk: "+c.x.n+"\n- Ukuran: "+c.l+" m x "+c.t+" m\n- Model: "+document.getElementById("m").selectedOptions[0].text+"\n- Pemasangan: "+(document.getElementById("pa").checked?"Ya":"Tidak")+"\n- Wilayah: "+(al||"-")+"\n- Estimasi: "+fmt(c.tot);
+window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank")};
+(async function(){
+function use(n){try{return window.claude?claude.use(n):Promise.resolve(null)}catch(e){return Promise.resolve(null)}}
+var user=await use("user"),db=await use("db"),assets=await use("assets"),isAdmin=false,items=[];
+try{isAdmin=!!(user&&user.canEdit())}catch(e){}
+var $=function(i){return document.getElementById(i)};
+function esc(s){var d=document.createElement("div");d.textContent=s==null?"":s;return d.innerHTML}
+P.forEach(function(x,i){$("o_pr").insertAdjacentHTML("beforeend",'<option>'+x.n+'</option>')});
+function renderG(){var g=$("gal");if(!items.length){g.innerHTML='<p class="sub">Galeri sedang disiapkan. Foto hasil pengerjaan akan tampil di sini.</p>';return}
+g.innerHTML=items.map(function(x){return '<figure><img loading="lazy" src="'+esc(x.url)+'" alt="'+esc(x.title||"Hasil pengerjaan")+'"><figcaption>'+esc(x.title||"Hasil pengerjaan")+'</figcaption>'+(isAdmin?'<button class="x" data-id="'+esc(x.id)+'" data-a="'+esc(x.aid||"")+'">Hapus</button>':'')+'</figure>'}).join("")}
+renderG();
+$("gal").addEventListener("click",async function(e){var b=e.target.closest("button.x");if(!b||!confirm("Hapus foto ini dari galeri?"))return;try{await db.collection("gallery").doc(b.dataset.id).delete();if(b.dataset.a&&assets)await assets.delete(b.dataset.a)}catch(err){alert("Gagal menghapus foto.")}});
+if(db){try{db.collection("gallery").onSnapshot(function(s){items=s.docs.map(function(d){return Object.assign({id:d.id},d.data())}).sort(function(a,b){return (b.createdAt||0)-(a.createdAt||0)});renderG();renderM()},function(){})}catch(e){}}
+var cur=0,NM=["Minimalis","Klasik","Modern","Ornamen","Laser Cut","Kotak","Lengkung","Diagonal","Premium","Eropa","Sederhana","Elegan"];
+function art(c,v){var s="",o="#f58a07",w="#e9edf3",i,x,y,k;
+if(c==0){s+='<rect x="30" y="18" width="140" height="114" fill="none" stroke="'+w+'" stroke-width="6"/>';k=2+v%4;for(i=1;i<=k;i++){x=30+140*i/(k+1);s+='<path d="M'+x+' 18v114" stroke="'+o+'" stroke-width="4"/>'}k=v%3;for(i=1;i<=k;i++){y=18+114*i/(k+1);s+='<path d="M30 '+y+'h140" stroke="'+o+'" stroke-width="3"/>'}if(v>=6)s+='<path d="M100 36 140 75 100 114 60 75z" fill="none" stroke="'+o+'" stroke-width="3"/>';if(v%5==4)s+='<circle cx="100" cy="75" r="22" fill="none" stroke="'+w+'" stroke-width="3"/>'}
+else if(c==1){s+='<path d="M12 40h176M12 126h176" stroke="'+w+'" stroke-width="6"/>';k=6+v%6;for(i=0;i<k;i++){x=22+156*i/(k-1);s+='<path d="M'+x+' 40V126" stroke="'+o+'" stroke-width="4"/>'+(v%3==0?'<path d="M'+(x-4)+' 40l4-12 4 12z" fill="'+o+'"/>':v%3==1?'<circle cx="'+x+'" cy="36" r="4" fill="'+o+'"/>':'')}if(v>=6)s+='<rect x="70" y="58" width="60" height="50" rx="'+(v%2?25:2)+'" fill="#1b2a42" stroke="'+w+'" stroke-width="3"/>'}
+else if(c==2){var sl=8+v%4*5,p=2+v%3;s+='<path d="M12 '+(50-sl/2)+'L188 '+(50+sl/2)+'" stroke="'+(v%2?o:w)+'" stroke-width="10"/>';for(i=0;i<p;i++){x=26+148*i/(p-1);s+='<path d="M'+x+' 56V130" stroke="'+w+'" stroke-width="5"/>'}k=v%4+3;for(i=0;i<k;i++){x=20+160*i/(k-1);s+='<path d="M'+x+' 62l10 12" stroke="'+o+'" stroke-width="2"/>'}s+='<path d="M8 130h184" stroke="#4a5b78" stroke-width="4"/>'}
+else if(c==3){s+='<path d="M15 110 185 30M15 138 185 58" stroke="'+w+'" stroke-width="5"/>';k=5+v%5;for(i=0;i<k;i++){x=25+150*i/(k-1);y=110-80*(x-15)/170;s+=v%3==0?'<path d="M'+x+' '+y+'v28" stroke="'+o+'" stroke-width="4"/>':v%3==1?'<circle cx="'+x+'" cy="'+(y+14)+'" r="8" fill="none" stroke="'+o+'" stroke-width="3"/>':'<path d="M'+(x-6)+' '+(y+2)+'l12 24m0-24-12 24" stroke="'+o+'" stroke-width="3"/>'}}
+else if(c==4){s+='<rect x="55" y="12" width="90" height="126" fill="none" stroke="'+w+'" stroke-width="6"/>';k=v%3+1;for(i=0;i<k;i++){var ww=70/k;s+='<rect x="'+(65+i*ww+3)+'" y="24" width="'+(ww-6)+'" height="'+(v%2?50:90)+'" fill="none" stroke="'+o+'" stroke-width="3"/>'}if(v%2)s+='<path d="M65 90h70M65 108h70" stroke="'+o+'" stroke-width="3"/>';s+='<circle cx="132" cy="80" r="4" fill="'+w+'"/>'}
+else{s+='<rect x="20" y="20" width="160" height="110" fill="none" stroke="'+w+'" stroke-width="5"/>';for(var a=0;a<3;a++)for(var b=0;b<4;b++){x=45+b*37;y=42+a*33;var m=(v+a+b)%4;s+=m==0?'<circle cx="'+x+'" cy="'+y+'" r="11" fill="none" stroke="'+o+'" stroke-width="3"/>':m==1?'<path d="M'+x+' '+(y-12)+'l12 12-12 12-12-12z" fill="none" stroke="'+o+'" stroke-width="3"/>':m==2?'<path d="M'+(x-11)+' '+y+'h22M'+x+' '+(y-11)+'v22" stroke="'+o+'" stroke-width="3"/>':'<path d="M'+(x-12)+' '+y+'q6-12 12 0t12 0" fill="none" stroke="'+o+'" stroke-width="3"/>'}}
+return s}
+function renderM(){$("tabs").innerHTML=P.map(function(x,i){return '<button class="tb'+(i==cur?' on':'')+'" data-c="'+i+'">'+x.n+'</button>'}).join("");
+var real=items.filter(function(x){return +x.cat===cur&&x.url}),h="",nm;
+real.forEach(function(x){nm=x.title||P[cur].n;h+='<figure><img loading="lazy" src="'+esc(x.url)+'" alt="'+esc(nm)+'"><figcaption>'+esc(nm)+'<br><button class="btn pm" data-n="'+esc(nm)+'">Pilih model ini</button></figcaption></figure>'});
+for(var v=0;v<Math.max(12-real.length,0);v++){nm=P[cur].n+" "+NM[v];h+='<figure><svg viewBox="0 0 200 150" role="img" aria-label="'+nm+'">'+art(cur,v)+'</svg><figcaption>'+nm+' <small>(ilustrasi)</small><br><button class="btn pm" data-n="'+nm+'">Pilih model ini</button></figcaption></figure>'}
+$("mod").innerHTML=h}
+$("tabs").addEventListener("click",function(e){var b=e.target.closest("button.tb");if(b){cur=+b.dataset.c;renderM()}});
+$("mod").addEventListener("click",function(e){var b=e.target.closest("button.pm");if(!b)return;$("o_pr").value=P[cur].n;$("o_ct").value="Model pilihan: "+b.dataset.n;location.hash="#pesan"});
+renderM();
+var WAN="6281369920633";
+var cfg={};
+function applyCfg(c){cfg=c||{};
+if(c.h1)$("hh").innerHTML=esc(c.h1)+' <span>'+esc(c.h2||"")+'</span>';
+if(c.tag)$("ht").textContent=c.tag;
+if(c.ad){$("tAd").textContent=c.ad;$("lAd").textContent=c.ad}
+if(c.jam||c.tel){$("tJam").textContent=(c.jam||"Senin – Sabtu, 08.00 – 17.00")+" · WA "+(c.tel||"0813-6992-0633")}
+if(c.jam)$("lJam").textContent=c.jam;
+if(c.tel){$("lTel").textContent=c.tel;var wn=c.tel.replace(/\D/g,"").replace(/^0/,"62");WA=wn;WAN=wn;document.querySelectorAll('a[href*="wa.me/"]').forEach(function(a){a.href=a.href.replace(/wa\.me\/\d+/,"wa.me/"+wn)})}
+(c.r||[]).forEach(function(r,i){if(+r>0&&P[i])P[i].r=+r});
+document.querySelectorAll("[data-p]").forEach(function(e){e.textContent="Harga mulai "+fmt(P[e.dataset.p].r)+" / m²"});calc()}
+function fillForm(){if(!isAdmin)return;var c=Object.assign({h1:"Solusi Kebutuhan Teralis dan Konstruksi Besi",h2:"Custom",tag:"Kuat, Rapi, dan Terpercaya",ad:"Talang Lubai, BD 6, RT 11/RW 04, Batang Hari Ogan, Kecamatan Tegineneng, Kabupaten Pesawaran, Lampung 35363",jam:"Senin – Sabtu, 08.00 – 17.00",tel:"0813-6992-0633"},cfg);
+["h1","h2","tag","ad","jam","tel"].forEach(function(k){$("e_"+k).value=c[k]});P.forEach(function(x,i){$("e_r"+i).value=x.r})}
+if(db){try{db.collection("site").doc("config").onSnapshot(function(s){var c=s.data();if(c){applyCfg(c);fillForm()}},function(){})}catch(e){}}
+$("o_btn").onclick=async function(){
+var st=$("o_st"),nm=$("o_nm").value.trim(),wa=$("o_wa").value.trim();
+if(!nm||!wa){st.textContent="Isi nama dan nomor WhatsApp dulu.";return}
+var fs=Array.from($("o_f").files).slice(0,3),imgs=[],note="";st.textContent="Memproses pesanan...";
+if(fs.length){if(assets){for(var i=0;i<fs.length;i++){try{var r=await assets.upload(fs[i]);imgs.push({url:r.url,aid:r.id})}catch(e){}}}
+if(imgs.length<fs.length)note=" Foto belum bisa diunggah di sini, jadi mohon kirim foto contoh langsung di chat WhatsApp."}
+var o={name:nm,wa:wa,product:$("o_pr").value,size:$("o_uk").value,detail:$("o_ct").value,images:imgs,createdAt:Date.now()},saved=false;
+if(db&&user){try{var uid=await user.id(),k="o"+Date.now(),ref=db.collection("orders").doc(uid),pl={};pl[k]=o;try{await ref.update(pl)}catch(e1){await ref.set(pl)}saved=true}catch(e){}}
+var msg="Halo Lubay Jaya Teknik, saya "+nm+" ("+wa+") ingin pesan custom:\n- Produk: "+o.product+"\n- Ukuran: "+(o.size||"-")+"\n- Detail: "+(o.detail||"-")+"\n- Foto contoh: "+(fs.length?fs.length+" foto (saya lampirkan di chat)":"tidak ada");
+var u="https://wa.me/"+WAN+"?text="+encodeURIComponent(msg);
+st.innerHTML=(saved?"Pesanan tersimpan. ":"")+"Lanjutkan ke WhatsApp untuk menerima penawaran."+esc(note)+' <a class="btn" target="_blank" rel="noopener" href="'+u+'">Buka WhatsApp</a>'};
+if(isAdmin){$("admin").hidden=false;$("edit").hidden=false;$("admbar").hidden=false;$("gadm").hidden=false;fillForm();
+$("e_btn").onclick=async function(){var st=$("e_st"),c={r:[]};["h1","h2","tag","ad","jam","tel"].forEach(function(k){c[k]=$("e_"+k).value.trim()});P.forEach(function(x,i){c.r.push(+$("e_r"+i).value||x.r)});
+if(!db){st.textContent="Penyimpanan belum tersedia di tampilan ini.";return}
+try{await db.collection("site").doc("config").set(c);applyCfg(c);st.textContent="Tersimpan. Perubahan sudah tampil di website."}catch(e){st.textContent="Gagal menyimpan, coba lagi."}};
+$("a_btn").onclick=async function(){var st=$("a_st"),fs=Array.from($("a_f").files);
+if(!fs.length){st.textContent="Pilih foto dulu.";return}if(!assets||!db){st.textContent="Fitur unggah belum tersedia di tampilan ini.";return}
+var ok=0;for(var i=0;i<fs.length;i++){st.textContent="Mengunggah "+(i+1)+" dari "+fs.length+"...";
+try{var r=await assets.upload(fs[i]);await db.collection("gallery").doc("g"+Date.now()+i).set({url:r.url,aid:r.id,cat:+$("a_c").value,title:$("a_t").value||fs[i].name.replace(/\.[^.]+$/,""),createdAt:Date.now()});ok++}catch(e){}}
+st.textContent=ok+" foto berhasil ditambahkan ke galeri."+(ok<fs.length?" Sebagian gagal, coba lagi.":"");$("a_f").value=""};
+if(db){try{db.collection("orders").onSnapshot(function(s){var l=[];s.docs.forEach(function(d){var v=d.data()||{};Object.keys(v).forEach(function(k){if(k.charAt(0)==="o"&&v[k]&&typeof v[k]==="object")l.push(Object.assign({id:d.id,key:k},v[k]))})});l.sort(function(a,b){return (b.createdAt||0)-(a.createdAt||0)});
+$("ordl").innerHTML=l.length?l.map(function(x){return '<div><b>'+esc(x.name)+'</b> · <a href="https://wa.me/'+esc(String(x.wa).replace(/\D/g,"").replace(/^0/,"62"))+'" target="_blank" rel="noopener">'+esc(x.wa)+'</a><br>'+esc(x.product)+' · '+esc(x.size)+'<br>'+esc(x.detail)+'<br>'+(x.images||[]).map(function(m){return '<a href="'+esc(m.url)+'" target="_blank" rel="noopener"><img src="'+esc(m.url)+'" alt="Foto contoh"></a>'}).join("")+'<br><button class="x" data-id="'+esc(x.id)+'" data-k="'+esc(x.key)+'">Hapus</button></div>'}).join(""):'<p class="sub">Belum ada pesanan.</p>'},function(){})}catch(e){}
+$("ordl").addEventListener("click",function(e){var b=e.target.closest("button.x");if(b&&confirm("Hapus pesanan ini?")){var rf=db.collection("orders").doc(b.dataset.id);rf.get().then(function(sn){var v=Object.assign({},sn.data());delete v[b.dataset.k];return rf.set(v)})}})}}
+})();
+calc();
+</script>
+</body>
+</html>
